@@ -1,3 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+h1,
+h2,
+h3 {
+  color: #00591bcf;
+}
+
 h1 {
-  color: green;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+
+  line-height: 1.5;
+}
+li {
+  font-size: 20px;
+}
+/* footer p {
+  font-size: 14px;
+} */
+#copyright {
+  font-size: 14px;
+}
+/* article header p{
+  font-style: italic;
+} */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.related-posts {
+  list-style: none;
+}
+.reasons-list {
+  list-style-type: circle;
+}
+.main-header {
+  background-color: #f1fcf1;
+}
+aside {
+  background-color: #f1fcf1;
+  border-top: 5px solid #00591bcf;
+  border-bottom: 5px solid #00591bcf;
+}
+body {
+  background-color: #c9fdd531;
 }

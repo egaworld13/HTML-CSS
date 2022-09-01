@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- * Dont use b for bold and i for italic. Instead use strong and em -->
-    <header>
+    <header class="main-header">
       <h1>📘The Code Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -25,7 +25,9 @@
           width="50"
           height="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="img/post-img.jpg"
@@ -75,7 +77,7 @@
         There are countless reasons for learning the fundamental language of the
         web. Here are 5 of them:
       </p>
-      <lu>
+      <lu class="reasons-list">
         <li>To be able to use the fundamental web dev language</li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
@@ -89,7 +91,7 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related-posts">
         <li>
           <img
             src="/img/related-1.jpg"
@@ -97,7 +99,7 @@
             width="75"
             height="75"
           /><a href="#"> How to Learn Web Development</a>
-          <p><strong>By Edgars Roze</strong></p>
+          <p class="related-author">By Edgars Roze</p>
         </li>
         <li>
           <img
@@ -106,7 +108,7 @@
             width="75"
             height="75"
           /><a href="#"> The Unknown Power of CSS</a>
-          <p><strong>By Ernests</strong></p>
+          <p class="related-author">By Ernests</p>
         </li>
         <li>
           <img
@@ -115,10 +117,12 @@
             width="75"
             height="75"
           /><a href="#"> Why JavaScript is Awesome</a>
-          <p><strong>By Elizabete</strong></p>
+          <p class="related-author">By Elizabete</p>
         </li>
       </ul>
     </aside>
-    <footer>CopyRight &copy; 2022 by The Edgars :)</footer>
+    <footer>
+      <p id="copyright">CopyRight &copy; 2022 by The Edgars :)</p>
+    </footer>
   </body>
 </html>
