@@ -1,12 +1,14 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
+/* * universal selector => lowest priority */
+* {
+  /* border-top: 10px solid #00591bcf; */
 }
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #00591bcf;
+}
+
 h1,
 h2,
 h3 {
@@ -71,4 +73,51 @@ aside {
 }
 body {
   background-color: #c9fdd531;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+/* better solution */
+/* li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+} */
+/* specific child */
+/* li:nth-child(2) {
+   color: rebeccapurple; 
+} */
+/* p:first childe not work, first is header */
+/* article p:first-child {
+  color: red;
+} */
+
+/* *Styling elements */
+a:link {
+  color: #00591bcf;
+  /* *Remove underline */
+  text-decoration: none;
+}
+/* *anchor visited */
+a:visited {
+  color: #00591bcf;
+}
+/* * HOVER */
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline chartreuse;
+}
+/* *Clicked element */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* nav a:link{
+  font-size: 18px;
+} */
+nav {
+  font-size: 18px;
 }
