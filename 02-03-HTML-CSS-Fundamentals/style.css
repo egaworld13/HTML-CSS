@@ -1,12 +1,40 @@
 /* * universal selector => lowest priority */
 * {
   /* border-top: 10px solid #00591bcf; */
+  /* ! GLOBAL style reset  using universal selector*/
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #00591bcf;
+  background-color: #c9fdd531;
+}
+.main-header {
+  background-color: #ccf7cc;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  /* *Shorthand */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+article {
+  margin-bottom: 60px;
+}
+aside {
+  background-color: #cedece;
+  border-top: 5px solid #00591bcf;
+  border-bottom: 5px solid #00591bcf;
+  padding: 50px 0;
+}
+nav {
+  font-size: 18px;
 }
 
 h1,
@@ -22,9 +50,11 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 40px;
 }
 h4 {
   font-size: 20px;
@@ -34,11 +64,21 @@ h4 {
 }
 p {
   font-size: 22px;
-
   line-height: 1.5;
+  margin-bottom: 15px;
 }
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
 }
 /* footer p {
   font-size: 14px;
@@ -63,18 +103,9 @@ li {
 .reasons-list {
   list-style-type: circle;
 }
-.main-header {
-  background-color: #f1fcf1;
+.web-doc-link {
+  margin-bottom: 40px;
 }
-aside {
-  background-color: #f1fcf1;
-  border-top: 5px solid #00591bcf;
-  border-bottom: 5px solid #00591bcf;
-}
-body {
-  background-color: #c9fdd531;
-}
-
 /* .first-li {
   font-weight: bold;
 } */
@@ -118,6 +149,3 @@ a:active {
 /* nav a:link{
   font-size: 18px;
 } */
-nav {
-  font-size: 18px;
-}
