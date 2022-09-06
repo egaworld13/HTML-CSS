@@ -138,7 +138,31 @@ li:last-child {
 /* article p:first-child {
   color: red;
 } */
-
+/** SUDO ELEMENT */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+/* * '+' use for sibling */
+h3 + p::first-line {
+  /* color: rgb(204, 8, 8); */
+}
+/* * create contnet after h2 */
+h2 {
+  /* background-color: #ec4508d7; */
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: #efef25;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
 /* *Styling elements */
 a:link {
   color: #00591bcf;
