@@ -1,9 +1,11 @@
 /* * universal selector => lowest priority */
+/* ?simple global reset, default param for most programmers */
 * {
   /* border-top: 10px solid #00591bcf; */
   /* ! GLOBAL style reset  using universal selector*/
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* * PAGE SECTION */
 body {
@@ -42,8 +44,7 @@ aside {
   background-color: #cedece;
   border-top: 5px solid #00591bcf;
   border-bottom: 5px solid #00591bcf;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 nav {
   font-size: 18px;
@@ -70,6 +71,7 @@ h3 {
 }
 h4 {
   font-size: 20px;
+  margin-bottom: 30px;
 
   text-transform: uppercase;
   text-align: center;
@@ -113,6 +115,7 @@ li:last-child {
 }
 .related-posts {
   list-style: none;
+  margin-left: 0;
 }
 .reasons-list {
   list-style-type: circle;
