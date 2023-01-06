@@ -11,6 +11,7 @@
       }
       .el--2 {
         background-color: orangered;
+        /* height: 250px; */
       }
       .el--3 {
         background-color: green;
@@ -40,11 +41,49 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        /* center verticaly  */
+        align-items: center;
+        justify-content: flex-start;
+        /* create space between elements */
+        gap: 10px;
+      }
+      .el--1 {
+        align-self: flex-start;
+      }
+      .el--5 {
+        align-self: stretch;
+        /* set element as last */
+        order: 1;
+      }
+      .el--6 {
+        /* set element as first */
+        order: -1;
+      }
+      /* space between in flexbox*/
+      /* bad practice */
+      /* .el {
+        margin-right: 30px;
+      } */
+      /* DEFAULTS */
+      .el {
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 200px; */
+        /* flex-shrink: 0; */
+        /*shorthand grow/shrink/basis */
+        /* flex: 0 0 200px; */
+        /* flex-grow: 1; */
+        flex: 1;
       }
     </style>
   </head>
   <body>
+    <!-- Flex container -->
     <div class="container">
+      <!-- Flex elements -->
       <div class="el el--1">HTML</div>
       <div class="el el--2">and</div>
       <div class="el el--3">CSS</div>
